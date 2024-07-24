@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=British&display=swap" rel="stylesheet">
+    <title>Jonatan Fuentes Cerezo</title>
+    
+    <style>
+        @font-face {
+            font-family: 'SLNTHLE';
+            src: url('silentfont/SLNTHLE.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SLNTHLC';
+            src: url('silentfont/SLNTHLC.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SLNTHLN';
+            src: url('silentfont/SLNTHLN.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1, h2, h3 {
+            font-family: 'SLNTHLE', serif;
+            text-align: center;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'British', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que el footer esté al final de la página */
+        }
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .navbar .active {
+            background-color: #0489aa;
+        }
+
+        .content {
+            margin-left: 20%;
+            padding: 20px;
+        }
+
+        .linkedin-link {
+            color: #5BC0DE;
+        }
+
+        .linkedin-link:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            font-family: 'SLNTHLN';
+            font-size: 34px;
+            color: #fff;
+        }
+        a:hover {
+            color: darkred;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-button {
+            margin: 0 10px;
+        }
+
+        .social-button img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-button img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Estilos del formulario */
+        .contact-form {
+            background: #333;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 600px;
+            box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+        }
+
+        .contact-form h2 {
+            font-family: 'SLNTHLC';
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 22px); /* Ajusta el ancho para incluir padding y bordes */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #555;
+            border-radius: 3px;
+            background-color: #222;
+            color: #fff;
+            box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+        }
+
+        .contact-form button {
+            padding: 10px 15px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #330b0b;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Empuja el footer al final de la página */
+            font-family: 'SLNTHLN';
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Jonatan Fuentes Cerezo</a></li>
+        <li style="float:right"><a class="active" href="#here">Contact</a></li>
+        <li style="float:right"><a href="project.html">Projects</a></li>
+        <li style="float:right"><a  href="#here">About</a></li>
+        <li style="float:right"><a  href="index.html">Home</a></li>
+    </ul>
+
+    <h1>Get in touch</h1>
+    <div class="social-buttons">
+        <a href="https://wa.me/56988362105" target="_blank" class="social-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+        
+        <a href="https://www.linkedin.com/in/jonatan-fuentes-cerezo-561a30281/" target="_blank" class="social-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+        </a>
+    </div>
+    
+    <br>
+    <h3>Send a general message or details of a project you'd like me to be a part of and I'll get back to you as soon as possible.</h3>
+    
+    <br>
+    <form action="https://formsubmit.co/fuentescerezojonatan@gmail.com" method="post" class="contact-form">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <footer>
+        ©2024 Jonatan Fuentes Cerezo
+    </footer>
+</body>
+</html>
 

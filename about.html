@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=British&display=swap" rel="stylesheet">
+    <title>Jonatan Fuentes Cerezo</title>
+    
+    <style>
+        @font-face {
+    font-family: 'SLNTHLE';
+    src: url('silentfont/SLNTHLE.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SLNTHLC';
+    src: url('silentfont/SLNTHLC.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SLNTHLN';
+    src: url('silentfont/SLNTHLN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+        /* Estilos generales para todo el documento */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'British', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que el footer esté al final de la página */
+        }
+        
+        /* Estilos para el navbar */
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .navbar li {
+            float: left;
+        }
+        
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .navbar li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .navbar .active {
+            background-color: #0489aa;
+        }
+        
+        /* Estilos para el contenido principal */
+        .content {
+            margin-left: 20%; /* Margen del 20% en la izquierda */
+            padding: 20px;
+        }
+
+        /* Estilo para el enlace de LinkedIn */
+        .linkedin-link {
+            color: #5BC0DE; /* Celeste agua medio verde */
+        }
+
+        .linkedin-link:hover {
+            text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+        }
+        a{
+            font-family: 'SLNTHLN';
+            font-size: 34px;
+            a:hover {
+            color: darkred;
+        }
+        }        @font-face {
+    font-family: 'SLNTHLE';
+    src: url('silentfont/SLNTHLE.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SLNTHLN';
+    src: url('silentfont/SLNTHLN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2{
+    font-family: 'SLNTHLE', serif;
+}
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Empuja el footer al final de la página */
+            font-family: 'SLNTHLN';
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Jonatan Fuentes Cerezo</a></li>
+        <li style="float:right"><a href="cont.html">Contact</a></li>
+        <li style="float:right"><a href="project.html">Projects</a></li>
+        <li style="float:right"><a class="active" href="#here">About</a></li>
+        <li style="float:right"><a  href="index.html">Home</a></li>
+    </ul>
+
+    <div class="content">
+        <h1>About</h1>
+        <p>Chilean, born 2001; lives and works in Copiapó, Chile</p>
+        <p>Telecommunications Certificate 2020</p>
+        <p>Graduated in 2022, Programmer Analyst</p>
+        <p>Certificate Web Design in 2023 - 2024</p>
+
+
+        <h1>Experience</h1>
+        <p>Dintec - Mining web application developer - 2023</p>
+        <p>Juzgado de Garantía de Copiapó - Manager of IT - 2024</p>
+
+        <h1>Full Stack Developer</h1>
+        
+        <table>
+            <tr>
+                <td><p>Languages </p>
+                    <ul class="skills-list">
+                        <li>HTML - CSS</li>
+                        <li>Javascript</li>
+                        <li>PHP - Laravel</li>
+                        <li>Java - JavaWeb</li>
+                        <li>Python - Django</li>
+                        <li>SQL</li>
+                        <li>MongoDB</li>
+                    </ul></td>
+                <td><p>Dev Tools</p>
+                    <ul class="tools-list">
+                        <li>Bootstrap</li>
+                        <li>Oracle</li>
+                        <li>Github</li>
+                        <li>Google Sheets</li>
+                        <li>VS code</li>
+                        <li>SQL Dev</li>
+                        <li>Azure</li>
+                    </ul></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        ©2024 Jonatan Fuentes Cerezo
+    </footer>
+</body>
+</html>

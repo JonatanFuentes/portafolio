@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=British&display=swap" rel="stylesheet">
+    <title>Jonatan Fuentes Cerezo</title>
+    <style>
+        @font-face {
+            font-family: 'SLNTHLE';
+            src: url('silentfont/SLNTHLE.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SLNTHLN';
+            src: url('silentfont/SLNTHLN.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1, h2 {
+            font-family: 'SLNTHLE', serif;
+        }
+
+        /* Estilos generales para todo el documento */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'British', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que el footer esté al final de la página */
+        }
+
+        /* Estilos para el navbar */
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .navbar .active {
+            background-color: #0489aa;
+        }
+
+        /* Estilos para el contenido principal */
+        .content {
+            flex: 1; /* Permite que el contenido ocupe el espacio restante */
+            text-align: center;
+            padding: 20px;
+        }
+
+        a {
+            font-family: 'SLNTHLN';
+            font-size: 34px;
+            color: #750079;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: darkred;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-family: 'SLNTHLN';
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Jonatan Fuentes Cerezo</a></li>
+        <li style="float:right"><a href="cont.html">Contact</a></li>
+        <li style="float:right"><a class="active" href="#here">Projects</a></li>
+        <li style="float:right"><a href="about.html">About</a></li>
+        <li style="float:right"><a href="index.html">Home</a></li>
+    </ul>
+
+    <div class="content">
+        <h1>Public Projects</h1>
+        <h2>(Github)</h2>
+        <br>
+        <a href="https://github.com/JonatanFuentes/arduino-google-apis">Voltage Graphs</a><br> <br>
+        <a href="https://github.com/JonatanFuentes/intermediario-sql-server---think-speak">Think Speak + SQL</a><br> <br>
+        <a href="https://github.com/JonatanFuentes/esp32---telegram-bot">ESP32 + Google APIS</a><br> <br>
+        <a href="https://github.com/JonatanFuentes/Telegram-bot-node.js-sql-server">Telegram BOTS with Arduino</a><br> <br>
+
+        <h1>Other</h1>
+        <a href="https://github.com/JonatanFuentes/music-bot-discord">Discord music bot - Python</a><br> <br>
+    </div>
+
+    <footer>
+        ©2024 Jonatan Fuentes Cerezo
+    </footer>
+</body>
+</html>

@@ -159,6 +159,26 @@ body {
             margin-top: auto; /* Empuja el footer al final de la página */
             font-family: 'SLNTHLN';
         }
+        @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Los elementos del navbar se colocan en una columna */
+    }
+
+    .content-block {
+        flex-direction: column; /* Cambia la dirección del bloque de contenido a columna */
+        width: 100%;
+    }
+
+    .content-block img {
+        width: 100%;
+        max-width: none; /* Elimina el ancho máximo para pantallas pequeñas */
+    }
+
+    .model-container {
+        width: 100%; /* Ajusta el ancho del contenedor del modelo */
+        height: 250px; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
     </style>
 </head>
 <body>

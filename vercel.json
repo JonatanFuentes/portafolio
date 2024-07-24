@@ -1,5 +1,0 @@
-{
-  "redirects": [
-    { "source": "/(.*)", "destination": "https://fuentescerezo.vercel.app/", "permanent": true }
-  ]
-}
